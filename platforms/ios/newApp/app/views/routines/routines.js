@@ -13,7 +13,7 @@ var pageData = new observableModule.fromObject({
 });
 
 exports.loaded = function(args) {
-    page = args.object;
+    var page = args.object;
     page.bindingContext = pageData;
 
     drawer = view.getViewById(page, "sideDrawer");
@@ -22,10 +22,21 @@ exports.loaded = function(args) {
     workoutList.load();
 };
 exports.gotolist = function(){
+    
 	frameModule.topmost().navigate("views/exercises/exercises");
 };
+exports.navigateToExercise=function(args) {  
+    var navigationOptions={
+        moduleName:"views/exercises/exercises",
+        context:{param1:"foo"  }
+    }
+    frameModule.topmost().navigate(navigationOptions);
+
+    //frameModule.topmost().navigate("views/exercises/exercises");
+}
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
+//exports.navigateToExercise = navigateToExercise;
 
 //exports.pageLoaded = pageLoaded;

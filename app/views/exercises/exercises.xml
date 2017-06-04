@@ -1,3 +1,5 @@
-<Page>
-<Label text="hello" class=".loading__square"/>
+<Page navigatingTo= "onNavigatingTo">
+        <Label text="Hello, Please Enter workout here"/>
+
+
 </Page>
