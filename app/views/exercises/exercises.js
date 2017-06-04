@@ -5,7 +5,8 @@ function onNavigatingTo(args) {
     var page = args.object;
     var dataItem = page.navigationContext;
     var pageData = new observableModule.fromObject({
-        workoutName: dataItem.param1
+        workoutName: dataItem.param1,
+        exerciseType: dataItem.param2
     });
     page.bindingContext = pageData;
 }

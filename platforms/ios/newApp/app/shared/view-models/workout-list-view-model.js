@@ -17,7 +17,9 @@ viewModel.load = function() {
             data.Exercises.forEach(function(workoutList){
                 viewModel.push({
                     name:workoutList.exerciseName,
-                    id:workoutList.exerciseID
+                    id:workoutList.exerciseID,
+                    exerciseType: workoutList.exerciseType,
+                    routineName: workoutList.routineName
                 });
             });
         });
