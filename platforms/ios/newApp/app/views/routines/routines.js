@@ -22,10 +22,10 @@ exports.loaded = function(args) {
     workoutList.load();
 };
 exports.gotolist = function(){
-	frameModule.topmost().navigate("views/login/login");
+	frameModule.topmost().navigate("views/exercises/exercises");
 };
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
 
-exports.pageLoaded = pageLoaded;
+//exports.pageLoaded = pageLoaded;

@@ -3,7 +3,7 @@ var ObservableArray = require("data/observable-array").ObservableArray;
 var appSettings = require('application-settings');
 var token = appSettings.getString('token','defaultValue');
 var d = new Date();
-var n = d.getDay() +1;
+var n = d.getDay()+1;
 var http = require("http");
 function workoutListViewModel(items) {
     var viewModel = new ObservableArray(items);
@@ -13,7 +13,6 @@ viewModel.load = function() {
         method: "GET",
     }).then(function (response) {
         return  response.content.toJSON();
-
     }).then(function(data){
             data.Exercises.forEach(function(workoutList){
                 viewModel.push({
