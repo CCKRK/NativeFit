@@ -1,5 +1,19 @@
-<Page loaded = "pageLoaded"
+<Page loaded = "loaded"
 xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
+    <Page.ActionBar>
+        <ActionBar title="Routines">
+        <NavigationButton visibility="collapsed"/>
+            <ActionBar.actionItems>
+                <ActionItem ios.position="left" tap="toggleDrawer">
+                    <ActionItem.actionView>
+                        <StackLayout>
+                            <Label text="&#xf03a;" class="fa"/>
+                        </StackLayout>
+                    </ActionItem.actionView>
+                </ActionItem>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.ActionBar> 
     <nsDrawer:RadSideDrawer id="sideDrawer" drawerTransition="PushTransition">
         <nsDrawer:RadSideDrawer.drawerContent>
             <StackLayout backgroundColor="gray">
@@ -24,11 +38,12 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
             <Label text="{{ today }}" id="today" horizontalALignment= "center" textwrap= "true" horizontalAlignment="left" verticalALignment= "center" />
             <Label text= "Today's Exercises:" horizontalAlignment= "Left" fontSize="14"/>
         <GridLayout rows="auto, *" columns="2*, *">
-            <ListView items="{{ routineList }}" id="routineList" row="1" colSpan="2">
+            <ListView items="{{ workoutList }}" id="workoutList" row="1" colSpan="2">
                 <ListView.itemTemplate>
                     <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10"/>
                 </ListView.itemTemplate>
-            </ListView>
+            </ListView> 
+        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
         </GridLayout>
         </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>

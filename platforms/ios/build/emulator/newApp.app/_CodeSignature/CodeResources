@@ -210,47 +210,47 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		qbfXrkmgkrlHdjdZXO63Kaq/3kw=
+		BcKkJtBgFOGypMPXgbd+DgyoJ9M=
 		</data>
 		<key>app/app.js</key>
 		<data>
-		NuRp7J1miOe2BSZiVj64y2F9qWc=
+		+XMaAhZXOShQHHyvu7A1GcwuakA=
 		</data>
-		<key>app/bundle-config.js</key>
+		<key>app/fonts/FontAwesome.ttf</key>
 		<data>
-		BZjEVi94RbJp1dunOY8mf6igpTg=
+		E7HqtlqYPHpzvHmXxHnWaUP3xss=
 		</data>
 		<key>app/images/logo.png</key>
 		<data>
 		0IOXjNQw/uxS6c95yK0FAwyLCq4=
 		</data>
-		<key>app/main-page.js</key>
-		<data>
-		49/T/HWk1B08Pqabv8LlIVmRnhk=
-		</data>
-		<key>app/main-page.xml</key>
-		<data>
-		2tt5QUc3voQpQIga1hqL7SAIAHc=
-		</data>
-		<key>app/main-view-model.js</key>
-		<data>
-		+XelK0+zH+mEQVYj91l+kUwkdQ0=
-		</data>
 		<key>app/package.json</key>
 		<data>
-		AXyPiIK1sqsfmwnHlEmywsS/8/k=
+		yCRPCOX4zCimZ8oJ7TQgGOQbw7g=
+		</data>
+		<key>app/platform.css</key>
+		<data>
+		w4jWeUlMQZrSn3Xs6hiRatTJS8Y=
 		</data>
 		<key>app/references.d.ts</key>
 		<data>
-		yDozBNmMJYY1mHH12KwQyKqK+Eg=
+		OK5guMuK91WCuUrZd2NH19JvBQM=
 		</data>
 		<key>app/shared/config.js</key>
 		<data>
 		fBYLdauKcsCfLt6gVJbH6FBiOXY=
 		</data>
+		<key>app/shared/utils/ios-swipe-delete.js</key>
+		<data>
+		nlPPpQuP/IAFd882n8AtAwX2vHo=
+		</data>
 		<key>app/shared/view-models/user-view-model.js</key>
 		<data>
-		g7EHav2LKZOi2n6HGwfC9+FuBV8=
+		GKKgEPcLn8Tw6iYhxKUc/kwisOU=
+		</data>
+		<key>app/shared/view-models/workout-list-view-model.js</key>
+		<data>
+		cuU5qYiSbSGcGUv2bIRemBiZ+vE=
 		</data>
 		<key>app/tns_modules/email-validator/.npmignore</key>
 		<data>
@@ -1824,17 +1824,25 @@
 		<data>
 		gUpn468c33gi5awe+x50slQJmZE=
 		</data>
+		<key>app/views/register/register.js</key>
+		<data>
+		XTb8XVJC1MxWSuLEliapGu44GXU=
+		</data>
+		<key>app/views/register/register.xml</key>
+		<data>
+		JEFFzdC4hZwocyU7+eyl/psB/ZU=
+		</data>
 		<key>app/views/routines/routines.css</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>app/views/routines/routines.js</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		MPcTzwmB4mOI6KGwHOCZea5MjSk=
 		</data>
 		<key>app/views/routines/routines.xml</key>
 		<data>
-		m9uGmYSxTWukZfvt5Vf3aektqcU=
+		7KmcbpBvFqggx3D1bz2kRvjrlEg=
 		</data>
 		<key>build.xcconfig</key>
 		<data>
@@ -2395,33 +2403,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbfXrkmgkrlHdjdZXO63Kaq/3kw=
+			BcKkJtBgFOGypMPXgbd+DgyoJ9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Zth7gZC/eEC0eEB6Z0rBXf4kjW4NiaSGd5wz496o/Y=
+			6UHI8ZUaLyAPoD/Rre0WgoBpcURsB4FlN1WDxn/r2ro=
 			</data>
 		</dict>
 		<key>app/app.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NuRp7J1miOe2BSZiVj64y2F9qWc=
+			+XMaAhZXOShQHHyvu7A1GcwuakA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GobSGxlplXZ1j9jPOrdDUVTfzKy3GTHg+dXOehZg5rc=
+			Hjg7rlE0Cu69EE+340XJuw254adxgzFW9+jUrHQWll0=
 			</data>
 		</dict>
-		<key>app/bundle-config.js</key>
+		<key>app/fonts/FontAwesome.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BZjEVi94RbJp1dunOY8mf6igpTg=
+			E7HqtlqYPHpzvHmXxHnWaUP3xss=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ups69q4CmXvEnKebWBpfZ3lf37CIYK3OLFhUaf0zZKY=
+			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
 			</data>
 		</dict>
 		<key>app/images/logo.png</key>
@@ -2435,59 +2443,37 @@
 			g9dPNDEFSJYQwBVk9JnjTqMF0BJi05uHx4hjYIT2dAQ=
 			</data>
 		</dict>
-		<key>app/main-page.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			49/T/HWk1B08Pqabv8LlIVmRnhk=
-			</data>
-			<key>hash2</key>
-			<data>
-			v3NGargtyFrd83EJsoo1M548pmgzcU+PJapqTLY8InU=
-			</data>
-		</dict>
-		<key>app/main-page.xml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2tt5QUc3voQpQIga1hqL7SAIAHc=
-			</data>
-			<key>hash2</key>
-			<data>
-			2qkDRn99iZyOUvzkQwbbVR3/QtvR/cS5mQU7WrM0fz4=
-			</data>
-		</dict>
-		<key>app/main-view-model.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+XelK0+zH+mEQVYj91l+kUwkdQ0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Un3i7m7zNw2vJ7zmk5YAadaAuQkDDmRo86+khGOQlVM=
-			</data>
-		</dict>
 		<key>app/package.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AXyPiIK1sqsfmwnHlEmywsS/8/k=
+			yCRPCOX4zCimZ8oJ7TQgGOQbw7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			KeUWuvZ1qbhN7tYbQSvONYYNzfTeYU4hEgUBjYzO8RI=
+			VQhErWcOa2Mn6xOgM5+ZV6n7kn9hrJKTyct3tAegksQ=
+			</data>
+		</dict>
+		<key>app/platform.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w4jWeUlMQZrSn3Xs6hiRatTJS8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZtAluTP249H6PpNCawR2kG5FXCgUklOVnwPsw5rbcEg=
 			</data>
 		</dict>
 		<key>app/references.d.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yDozBNmMJYY1mHH12KwQyKqK+Eg=
+			OK5guMuK91WCuUrZd2NH19JvBQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X5pHYco8Emfivn+R0JfB7m2/Wmi+3nt0u8Es7slK14U=
+			SoVujN6S86EJ1Ee617J/L/NUX7SOq/KU10wbjhC/KhE=
 			</data>
 		</dict>
 		<key>app/shared/config.js</key>
@@ -2501,15 +2487,37 @@
 			yUuNreOel/NPYIKwxWk2fjS1I+/QbfJDiaRakOlYl3Y=
 			</data>
 		</dict>
+		<key>app/shared/utils/ios-swipe-delete.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nlPPpQuP/IAFd882n8AtAwX2vHo=
+			</data>
+			<key>hash2</key>
+			<data>
+			jtmtVGfaYonZf3vEG8H8OoNwtUcft037wF066fIJwWE=
+			</data>
+		</dict>
 		<key>app/shared/view-models/user-view-model.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g7EHav2LKZOi2n6HGwfC9+FuBV8=
+			GKKgEPcLn8Tw6iYhxKUc/kwisOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			I3ZS2t1Yvy5lhocaM5Jn5KlyEWs6ZKwTw8Mtz963oxA=
+			HTUyF05xYUQ+dKa21FI9LIYz35096Q1tozP19mTLW2Y=
+			</data>
+		</dict>
+		<key>app/shared/view-models/workout-list-view-model.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cuU5qYiSbSGcGUv2bIRemBiZ+vE=
+			</data>
+			<key>hash2</key>
+			<data>
+			PQSSUEyujxXGUrXri0YECea0hMdwBrB3iIViufkbxeM=
 			</data>
 		</dict>
 		<key>app/tns_modules/email-validator/.npmignore</key>
@@ -6835,6 +6843,28 @@
 			ZZO28mhW8htZz6RhJa2MGQ7/0edz4LXFm6XNuBu5ZEg=
 			</data>
 		</dict>
+		<key>app/views/register/register.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XTb8XVJC1MxWSuLEliapGu44GXU=
+			</data>
+			<key>hash2</key>
+			<data>
+			IbJd60ez1XplgH4D/hz+7bKIwdAln3zlpnRLXrNugEc=
+			</data>
+		</dict>
+		<key>app/views/register/register.xml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JEFFzdC4hZwocyU7+eyl/psB/ZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			cV6xudmf/idfDHk3bHHFBQcMUL3zO9mxdVFxxCju+Yg=
+			</data>
+		</dict>
 		<key>app/views/routines/routines.css</key>
 		<dict>
 			<key>hash</key>
@@ -6850,22 +6880,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			MPcTzwmB4mOI6KGwHOCZea5MjSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			4+C+ZwkOjctpeXG6Qn11k++zN6kpVQNMawGpTHfIS0E=
 			</data>
 		</dict>
 		<key>app/views/routines/routines.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m9uGmYSxTWukZfvt5Vf3aektqcU=
+			7KmcbpBvFqggx3D1bz2kRvjrlEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			U5wBcXOA7GqE2wrd38ooUTXMtnoEGDuMerPIdyJMwx0=
+			oVl56RuBqw30fq0rpyJHj2gGYr1ZxtmNDWHID9JZHfA=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>

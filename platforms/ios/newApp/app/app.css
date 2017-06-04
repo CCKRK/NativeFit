@@ -1,7 +1,4 @@
 ﻿
-.btn {
-    font-size: 18;
-}
 @import url('~/platform.css');
 ActionBar {
     color: white;

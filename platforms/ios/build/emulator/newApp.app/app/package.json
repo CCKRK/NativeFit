@@ -3,6 +3,6 @@
     "v8Flags": "--expose_gc"
   },
   "main": "app.js",
-  "name": "tns-template-hello-world",
+  "name": "login-redux",
   "version": "3.0.0"
 }
