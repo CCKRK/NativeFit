@@ -25,10 +25,13 @@ exports.gotolist = function(){
     
 	frameModule.topmost().navigate("views/exercises/exercises");
 };
-exports.navigateToExercise=function(args) {  
+
+exports.nameTap=function(args) {  
+    var item = args.view.bindingContext;
+    var index = workoutList.indexOf(item);
     var navigationOptions={
         moduleName:"views/exercises/exercises",
-        context:{param1:"foo"  }
+        context:{param1:workoutList.getItem(index).name}
     }
     frameModule.topmost().navigate(navigationOptions);
 

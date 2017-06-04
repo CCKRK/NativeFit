@@ -38,9 +38,9 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
             <Label text="{{ today }}" id="today" horizontalALignment= "center" textwrap= "true" horizontalAlignment="left" verticalALignment= "center" />
             <Label text= "Today's Exercises:" horizontalAlignment= "Left" fontSize="14"/>
         <GridLayout rows="auto, *" columns="2*, *">
-            <ListView items="{{ workoutList }}" id="workoutList" row="1" colSpan="2" tap="navigateToExercise">
+            <ListView items="{{ workoutList }}" id="workoutList" row="1" colSpan="2">
                 <ListView.itemTemplate>
-                    <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10"/>
+                    <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10" tap="nameTap"/>
                 </ListView.itemTemplate>
             </ListView> 
         <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2"/>

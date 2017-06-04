@@ -1,5 +1,6 @@
 <Page navigatingTo= "onNavigatingTo">
         <Label text="Hello, Please Enter workout here"/>
+        <Label text="{{ workoutName }}"/>
 
 
 </Page>

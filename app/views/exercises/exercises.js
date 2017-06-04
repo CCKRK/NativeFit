@@ -4,12 +4,10 @@ var observableModule = require("data/observable");
 function onNavigatingTo(args) {  
     var page = args.object;
     var dataItem = page.navigationContext;
-    //page.bindingContext = dataItem;
-    console.log(dataItem.param1);
+    var pageData = new observableModule.fromObject({
+        workoutName: dataItem.param1
+    });
+    page.bindingContext = pageData;
 }
 
-exports.onNavigatingTo = onNavigatingTo;  
-/*exports.gotohome = function(){
-	frameModule.topmost().navigate("views/login/login");
-    
-};*/
+exports.onNavigatingTo = onNavigatingTo; 
