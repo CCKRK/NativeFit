@@ -3,6 +3,7 @@ var appSettings = require('application-settings')
 var validator = require("email-validator");
 var http = require("http");
 var observableModule = require("data/observable");
+var fetchModule = require("fetch");
 function User(info) {
     info = info || {};
     var viewModel = new observableModule.fromObject({

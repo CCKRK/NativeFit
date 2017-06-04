@@ -1,20 +1,19 @@
+var dialogsModule = require("ui/dialogs");
+var observableModule = require("data/observable")
+var ObservableArray = require("data/observable-array").ObservableArray;
+var page;
+var workoutListViewModel = require("../../shared/view-models/workout-list-view-model");
 
-var frameModule = require("ui/frame");
-var view = require("ui/core/view");
-var drawer;
-var todaysDate = new Date();
-var todaysNumber = todaysDate.getDay();
 
-function pageLoaded(args) {
-    var page = args.object;
-    drawer = view.getViewById(page, "sideDrawer");
-}
+var workoutList = new workoutListViewModel([]);
+var pageData = new observableModule.fromObject({
+    workoutList: workoutList
+});
 
-exports.gotolist = function(){
-	frameModule.topmost().navigate("views/login/login");
+exports.loaded = function(args) {
+    page = args.object;
+    page.bindingContext = pageData;
+
+    workoutList.empty();
+    workoutList.load();
 };
-exports.toggleDrawer = function() {
-    drawer.toggleDrawerState();
-};
-
-exports.pageLoaded = pageLoaded;
