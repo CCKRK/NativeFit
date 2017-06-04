@@ -1,0 +1,36 @@
+<Page loaded = "pageLoaded"
+xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
+    <nsDrawer:RadSideDrawer id="sideDrawer" drawerTransition="PushTransition">
+        <nsDrawer:RadSideDrawer.drawerContent>
+            <StackLayout backgroundColor="gray">
+                <StackLayout height="56" style="text-align: center;
+                vertical-align: center;">
+                    <Label text="Navigation Menu"/>
+                </StackLayout>
+                <StackLayout>
+                        <Label text="My Account" padding="10" backgroundColor="lightgray"/>
+                        <Label text="Create New Routine" padding="10"/>
+                        <Label text="Search Community Routines" padding="10"/>
+                        <Label text="Edit Current Routine" padding="10" tap="gotolist"/>
+                        <Label text="View Progress" padding="10" />
+                        <Label text="View Reccomendations" padding="10" backgroundColor="lightgray" />
+                        <Label text="Log Out" padding="10"/>
+                </StackLayout>
+            </StackLayout>
+        </nsDrawer:RadSideDrawer.drawerContent>
+
+        <nsDrawer:RadSideDrawer.mainContent>
+        <StackLayout>
+            <Label text="{{ today }}" id="today" horizontalALignment= "center" textwrap= "true" horizontalAlignment="left" verticalALignment= "center" />
+            <Label text= "Today's Exercises:" horizontalAlignment= "Left" fontSize="14"/>
+        <GridLayout rows="auto, *" columns="2*, *">
+            <ListView items="{{ routineList }}" id="routineList" row="1" colSpan="2">
+                <ListView.itemTemplate>
+                    <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10"/>
+                </ListView.itemTemplate>
+            </ListView>
+        </GridLayout>
+        </StackLayout>
+        </nsDrawer:RadSideDrawer.mainContent>
+    </nsDrawer:RadSideDrawer>
+</Page>
