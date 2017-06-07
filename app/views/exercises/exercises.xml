@@ -13,10 +13,10 @@ xmlns:customControls="xml-declaration/buttons">
         <!-- I can use the above to make the buttons -->
    <Label text="Add Weight (to each side):" horizontalAlignment="center"   />
     <StackLayout id= "buttons" orientation="horizontal">
-       <customControls:QuestionControl question="{{question1}}" answers="{{answers1}}"/>
-        <customControls:QuestionControl question="{{question2}}" answers="{{answers2}}"/>
+            <!--This called the custom button control. -->
+       <!--<customControls:QuestionControl answers="{{answers1}}" id="buttonmod"/>-->
     </StackLayout>
-   <Button text= "Save Progress" tap= "{{ save }}"/>
+   <Button text= "Save Progress" tap= "{{ save }}" />
    
  </StackLayout>
 </Page>

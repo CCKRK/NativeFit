@@ -48,7 +48,7 @@ return counter;
     };
         viewModel.onTap2 = function() {
         var weightfield = parseFloat(this.get("weightField"));
-        this.set("weightField", weightfield + 5);
+        this.set("weightField", weightfield + 2.5);
     };
         viewModel.onTap10 = function() {
         var weightfield = parseFloat(this.get("weightField"));
