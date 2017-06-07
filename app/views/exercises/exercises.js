@@ -16,27 +16,33 @@ function onNavigatingTo(args) {
     var pageData = new observableModule.fromObject({
         workoutName: dataItem.param1,
         exerciseType: dataItem.param2,
-        weightField: 55,
+        weightField: 255,
         onTap5: weightField.onTap5,
         onTap2: weightField.onTap2,
         onTap10:weightField.onTap10,
         onTap25:weightField.onTap25,
-        onTap45:weightField.onTap45
+        onTap45:weightField.onTap45,
+                question1:"How many continents are there?",
+        answers1:["7 Continents",
+                "1 Continent",
+                "There are no continents"
+            ]
+    
        
     });
     page.bindingContext=pageData;
         // I can add the buttons here programmatically.
-        if(dataItem.param2 = 3){
+        if(dataItem.param2 = 1){
         var button1 = new buttonModule.Button();
-        button1.text = "5 lbs";
-
+        button1.text = "5lbs";
+        button1.margin ="05";
+        button1.padding="10";
         var onTap = function () {
         pageData.onTap5();
         };
-
-button1.addEventListener(buttonModule.Button.tapEvent, onTap, this);
-        var viewLayout = page.getViewById("labels");
-        viewLayout.addChild(button1);
+        button1.addEventListener(buttonModule.Button.tapEvent, onTap, this);
+        var viewLayout = page.getViewById("buttons");
+        //viewLayout.addChild(button1);
         
     }
 }

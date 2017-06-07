@@ -30,16 +30,11 @@ exports.nameTap=function(args) {
     var item = args.view.bindingContext;
     var index = workoutList.indexOf(item);
     var navigationOptions={
-        // this goes to a working barbell exercise view
         moduleName:"views/exercises/exercises",
-        //moduleName:"views/newexercise/newexercise",
         context:{param1:workoutList.getItem(index).name,
                 param2:workoutList.getItem(index).exerciseType}
     }
-   // this goes a working barbell exercise view
     frameModule.topmost().navigate(navigationOptions);
-
-   // frameModule.topmost().navigate("views/newexercise/newexercise");
 }
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();

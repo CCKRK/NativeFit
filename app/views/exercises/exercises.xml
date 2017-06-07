@@ -1,26 +1,22 @@
 <Page navigatingTo= "onNavigatingTo"     
-xmlns:customControls="xml-declaration/mymodule">
-	<Page.actionBar>
-	    <ActionBar title="Log Workout"></ActionBar>
-        <NavigationButton/>
-	</Page.actionBar>
-
-        <StackLayout id= "labels">
-        <Label text="Exercise:" horizontalAlignment="Left"   />
-        <Label text="{{ workoutName }}" horizontalAlignment="center" font-size="20"/>
-        <Label text="Total Weight:" horizontalAlignment="center"   />
-        <TextField text="{{ weightField }}" hint="Enter Weight" keyboardType="phone" id="weightField"/>
+xmlns:customControls="xml-declaration/buttons">
+ <Page.actionBar>
+  <ActionBar title="Log Workout"></ActionBar>
+   <NavigationButton/>
+ </Page.actionBar>
+  <StackLayout id= "labels">
+   <Label text="Exercise:" horizontalAlignment="Left"   />
+   <Label text="{{ workoutName }}" horizontalAlignment="center" font-size="20"/>
+   <Label text="Total Weight:" horizontalAlignment="center"   />
+   <TextField text="{{ weightField }}" hint="Enter Weight" keyboardType="phone" id="weightField"/>
         <!--<Label text="{{ exerciseType }}"/> -->
         <!-- I can use the above to make the buttons -->
-        <Label text="Add Weight (to each side):" horizontalAlignment="center"   />
-        <StackLayout id="buttons" orientation="horizontal">
-
-        <Button  text="2.5lbs" margin="05" padding="10" tap="{{ onTap2 }}"/>
-        <Button text="5lbs" margin="05" padding="10" tap="{{ onTap5 }}" />
-        <Button  text="10lbs" margin="05" padding="10" tap="{{ onTap10 }}"/>
-        <Button  text="25lbs" margin="05" padding="10" tap="{{ onTap25 }}"/>
-        <Button text="45lbs" margin="05" padding="10" tap="{{ onTap45 }}"/>
-        </StackLayout>
-        </StackLayout>
-
+   <Label text="Add Weight (to each side):" horizontalAlignment="center"   />
+    <StackLayout id= "buttons" orientation="horizontal">
+       <customControls:QuestionControl question="{{question1}}" answers="{{answers1}}"/>
+        <customControls:QuestionControl question="{{question2}}" answers="{{answers2}}"/>
+    </StackLayout>
+   <Button text= "Save Progress" tap= "{{ save }}"/>
+   
+ </StackLayout>
 </Page>
