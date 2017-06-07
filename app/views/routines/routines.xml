@@ -16,18 +16,18 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
     </Page.ActionBar> 
     <nsDrawer:RadSideDrawer id="sideDrawer" drawerTransition="PushTransition">
         <nsDrawer:RadSideDrawer.drawerContent>
-            <StackLayout backgroundColor="gray">
+            <StackLayout backgroundColor="#99cccc">
                 <StackLayout height="56" style="text-align: center;
                 vertical-align: center;">
                     <Label text="Navigation Menu"/>
                 </StackLayout>
                 <StackLayout>
-                        <Label text="My Account" padding="10" backgroundColor="lightgray"/>
+                        <Label text="My Account" padding="10" backgroundColor="powderblue"/>
                         <Label text="Create New Routine" padding="10"/>
                         <Label text="Search Community Routines" padding="10"/>
                         <Label text="Edit Current Routine" padding="10"/>
                         <Label text="View Progress" padding="10" />
-                        <Label text="View Reccomendations" padding="10" backgroundColor="lightgray" />
+                        <Label text="View Reccomendations" padding="10" backgroundColor="powderblue" />
                         <Label text="Log Out" padding="10"/>
                 </StackLayout>
             </StackLayout>

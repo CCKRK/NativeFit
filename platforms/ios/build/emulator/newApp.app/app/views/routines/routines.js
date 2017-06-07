@@ -13,19 +13,31 @@ var pageData = new observableModule.fromObject({
 });
 
 exports.loaded = function(args) {
-    page = args.object;
+    var page = args.object;
     page.bindingContext = pageData;
 
     drawer = view.getViewById(page, "sideDrawer");
-
+    
     workoutList.empty();
     workoutList.load();
 };
 exports.gotolist = function(){
-	frameModule.topmost().navigate("views/login/login");
+    //not sure what would happen here
+	//frameModule.topmost().navigate("views/exercises/exercises");
 };
+
+exports.nameTap=function(args) {  
+    var item = args.view.bindingContext;
+    var index = workoutList.indexOf(item);
+    var navigationOptions={
+        moduleName:"views/exercises/exercises",
+        context:{param1:workoutList.getItem(index).name,
+                param2:workoutList.getItem(index).exerciseType,
+                param3:workoutList.getItem(index).id
+            }
+    }
+    frameModule.topmost().navigate(navigationOptions);
+}
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
-
-exports.pageLoaded = pageLoaded;

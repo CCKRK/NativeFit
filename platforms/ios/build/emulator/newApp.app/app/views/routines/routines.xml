@@ -25,7 +25,7 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
                         <Label text="My Account" padding="10" backgroundColor="lightgray"/>
                         <Label text="Create New Routine" padding="10"/>
                         <Label text="Search Community Routines" padding="10"/>
-                        <Label text="Edit Current Routine" padding="10" tap="gotolist"/>
+                        <Label text="Edit Current Routine" padding="10"/>
                         <Label text="View Progress" padding="10" />
                         <Label text="View Reccomendations" padding="10" backgroundColor="lightgray" />
                         <Label text="Log Out" padding="10"/>
@@ -35,15 +35,15 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
 
         <nsDrawer:RadSideDrawer.mainContent>
         <StackLayout>
-            <Label text="{{ today }}" id="today" horizontalALignment= "center" textwrap= "true" horizontalAlignment="left" verticalALignment= "center" />
+            <Label text="{{ routineName }}" id="today" horizontalAlignment= "center" />
             <Label text= "Today's Exercises:" horizontalAlignment= "Left" fontSize="14"/>
         <GridLayout rows="auto, *" columns="2*, *">
             <ListView items="{{ workoutList }}" id="workoutList" row="1" colSpan="2">
                 <ListView.itemTemplate>
-                    <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10"/>
+                    <Label text="{{ name }}" horizontalALignment="left" verticalAlignment="center" padding="10" tap="nameTap"/>
                 </ListView.itemTemplate>
             </ListView> 
-        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
+        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2"/>
         </GridLayout>
         </StackLayout>
         </nsDrawer:RadSideDrawer.mainContent>

@@ -1,26 +1,38 @@
 ﻿
-@import url('~/platform.css');
+@import '~/platform.css';
 ActionBar {
     color: white;
-    background-color: #000000;
+ 
 }
 Page {
-    background-color: white;
+    background-color:powderblue;
     font-size: 17;
+    
 }
 TextField {
     margin: 10;
     padding: 10;
+    color:#ce6e62;
+    background-color:  #99cccc;
+
+}
+ListView {
+    background-color:powderblue;
 }
 Image {
     margin-top: 20;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 80;
+    margin-bottom: 40;
 }
 Button {
     margin: 10;
     padding: 10;
+    color: #ce6e62;
+    border-color:#ce6e62;
+}
+Label{
+    color:#ce6e62;
 }
 .fa {
   font-family: 'FontAwesome', 'fontawesome-webfont',FontAwesome,fontawesome-webfont;
