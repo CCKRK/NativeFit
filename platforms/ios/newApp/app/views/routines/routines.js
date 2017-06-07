@@ -22,20 +22,24 @@ exports.loaded = function(args) {
     workoutList.load();
 };
 exports.gotolist = function(){
-    
-	frameModule.topmost().navigate("views/exercises/exercises");
+    //not sure what would happen here
+	//frameModule.topmost().navigate("views/exercises/exercises");
 };
 
 exports.nameTap=function(args) {  
     var item = args.view.bindingContext;
     var index = workoutList.indexOf(item);
-    //var exerciseType = workoutList.getItem(index).exerciseType;
     var navigationOptions={
+        // this goes to a working barbell exercise view
         moduleName:"views/exercises/exercises",
+        //moduleName:"views/newexercise/newexercise",
         context:{param1:workoutList.getItem(index).name,
                 param2:workoutList.getItem(index).exerciseType}
     }
+   // this goes a working barbell exercise view
     frameModule.topmost().navigate(navigationOptions);
+
+   // frameModule.topmost().navigate("views/newexercise/newexercise");
 }
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
