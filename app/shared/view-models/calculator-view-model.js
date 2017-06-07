@@ -39,19 +39,17 @@ return counter;
         var weightfield = parseFloat(this.get("weightField"));
         this.set("weightField", weightfield + 90);
     };
-viewModel.add = function(num,num2){
-    console.log(num);
-    console.log(num2);
- return http.request({
-    url: config.apiURL + '/AddProgress',
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    content: JSON.stringify({ userID: token, exerciseID:parseInt(num), recordDate:d,weight:parseInt(num2)})//harcoded 2
-})
-.then(function (response) {
-    console.log(JSON.stringify(response.content.toJSON()));
-    return  response.content.toJSON();
+    viewModel.add = function(num,num2){
+    return http.request({
+        url: config.apiURL + '/AddProgress',
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        content: JSON.stringify({ userID: token, exerciseID:parseInt(num), recordDate:d,weight:parseInt(num2)})//harcoded 2
     })
+    .then(function (response) {
+        console.log(JSON.stringify(response.content.toJSON()));
+        return  response.content.toJSON();
+        })
     //.then(function(data){
       //  viewModel.push({ name: newExercise, id: this.exerciseID });
   //  });

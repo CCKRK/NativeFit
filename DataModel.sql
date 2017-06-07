@@ -107,13 +107,39 @@ routineID INT NOT NULL,
 exerciseName VARCHAR(55) NOT NULL,
 PRIMARY KEY(exerciseID));
 
-insert into exercises (routineID,exerciseName) VALUES (1,'Bench Press');
-insert into exercises (routineID,exerciseName) VALUES (1,'Military Press');
-insert into exercises (routineID,exerciseName) VALUES (1,'Squats');
-insert into exercises (routineID,exerciseName) VALUES (1,'DeadLifts');
-insert into exercises (routineID,exerciseName) VALUES (2,'Bench Press');
-insert into exercises (routineID,exerciseName) VALUES (2,'Incline Bench Press');
 
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Flat Barbell Bench Press",1,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Standing Barbell Shoulder Press",1,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Incline Barbell Bench Press",1,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Dumbbell Side Lateral Raise",1,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Rope Pushdowns",1,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Overhead Dumbbell Extension",1,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Shrugs",1,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Barbell Rows",2,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Lat Pulldowns",2,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Face-pulls",2,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Barbell Bicep Curls",2,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Hammer Curls",2,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Squats",3,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Leg Extensions",3,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Hamstring Curls",3,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Standing Calf Raises",3,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Flat Barbell Bench Press",4,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Standing Barbell Shoulder Press",4,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Incline Barbell Bench Press",4,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Dumbbell Side Lateral Raise",4,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Rope Pushdowns",4,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Overhead Dumbbell Extension",4,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Shrugs",4,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Barbell Rows",5,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Lat Pulldowns",5,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Face-pulls",5,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Barbell Bicep Curls",5,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Hammer Curls",5,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Squats",6,1);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Leg Extensions",6,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Hamstring Curls",6,2);
+insert into exercises (routineID,exerciseName,dayID,exerciseType) VALUES (1,"Standing Calf Raises",6,2);
 create table routines (routineID INT NOT NULL AUTO_INCREMENT,
 userID INT NOT NULL,
 routineName VARCHAR(55) NOT NULL,
