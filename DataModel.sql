@@ -76,6 +76,31 @@ END$$
 DELIMITER ;
 
 
+DROP PROCEDURE sp_AddProgress;
+DELIMITER $$
+CREATE PROCEDURE sp_AddProgress(
+IN p_userID INT,    
+IN p_exerciseID VARCHAR(55),
+IN p_recordDate DATE,
+IN p_weight INT
+)
+BEGIN
+INSERT INTO progress(
+userID,
+exerciseID,
+recordDate,
+weight
+)
+VALUES(
+p_userID,
+p_exerciseID,
+p_recordDate,
+p_weight
+);
+END$$
+DELIMITER ;
+
+
 ### TEST TABLES
 create table exercises (exerciseID INT NOT NULL AUTO_INCREMENT,
 routineID INT NOT NULL,

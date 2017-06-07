@@ -24,6 +24,7 @@ viewModel.load = function() {
             });
         });
 };
+
     viewModel.empty = function() {
     while (viewModel.length) {
         viewModel.pop();

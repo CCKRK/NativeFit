@@ -32,7 +32,9 @@ exports.nameTap=function(args) {
     var navigationOptions={
         moduleName:"views/exercises/exercises",
         context:{param1:workoutList.getItem(index).name,
-                param2:workoutList.getItem(index).exerciseType}
+                param2:workoutList.getItem(index).exerciseType,
+                param3:workoutList.getItem(index).id
+            }
     }
     frameModule.topmost().navigate(navigationOptions);
 }

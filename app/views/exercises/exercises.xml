@@ -16,7 +16,7 @@ xmlns:customControls="xml-declaration/buttons">
             <!--This called the custom button control. -->
        <!--<customControls:QuestionControl answers="{{answers1}}" id="buttonmod"/>-->
     </StackLayout>
-   <Button text= "Save Progress" tap= "{{ save }}" />
+   <Button text= "Save Progress" tap="save" />
    
  </StackLayout>
 </Page>
