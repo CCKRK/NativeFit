@@ -35,7 +35,7 @@ xmlns:nsDrawer="nativescript-telerik-ui/sidedrawer">
 
         <nsDrawer:RadSideDrawer.mainContent>
         <StackLayout>
-            <Label text="{{ today }}" id="today" horizontalALignment= "center" textwrap= "true" horizontalAlignment="left" verticalALignment= "center" />
+            <Label text="{{ routineName }}" id="today" horizontalAlignment= "center" />
             <Label text= "Today's Exercises:" horizontalAlignment= "Left" fontSize="14"/>
         <GridLayout rows="auto, *" columns="2*, *">
             <ListView items="{{ workoutList }}" id="workoutList" row="1" colSpan="2">

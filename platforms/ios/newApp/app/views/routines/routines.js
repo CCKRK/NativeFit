@@ -17,7 +17,7 @@ exports.loaded = function(args) {
     page.bindingContext = pageData;
 
     drawer = view.getViewById(page, "sideDrawer");
-
+    
     workoutList.empty();
     workoutList.load();
 };
@@ -29,18 +29,14 @@ exports.gotolist = function(){
 exports.nameTap=function(args) {  
     var item = args.view.bindingContext;
     var index = workoutList.indexOf(item);
+    //var exerciseType = workoutList.getItem(index).exerciseType;
     var navigationOptions={
         moduleName:"views/exercises/exercises",
         context:{param1:workoutList.getItem(index).name,
                 param2:workoutList.getItem(index).exerciseType}
     }
     frameModule.topmost().navigate(navigationOptions);
-
-    //frameModule.topmost().navigate("views/exercises/exercises");
 }
 exports.toggleDrawer = function() {
     drawer.toggleDrawerState();
 };
-//exports.navigateToExercise = navigateToExercise;
-
-//exports.pageLoaded = pageLoaded;
